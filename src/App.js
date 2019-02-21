@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './styles/background.js';
 import bgpic from './imgs/background.jpg';
-
+import Text from './Text.js';
 class App extends Component {
   render() {
     return (  
@@ -13,11 +13,19 @@ class App extends Component {
               <div style={styles.panel.space} className={styles.panel.space_class}>
                 
                 <p style={styles.text_title}>BIG FISH</p>
-                TextInput
-              
+                <Text placeholder="Email"/><br/>
+                <Text placeholder="Password"/><br/>
+                <Text placeholder="Name"/><br/>
+
+
               
               </div> 
-              <div style={styles.panel.footer} className={styles.panel.footer_class}></div> 
+              <div style={styles.panel.footer} className={styles.panel.footer_class}>
+                <div className={styles.panel.footer_width}>
+                  <span style={styles.text_bottom_left}>Already have an account? </span><span style={styles.text_bottom_right}>Login</span>
+                </div>
+              </div> 
+
             </div>
           </div>    
         </div>

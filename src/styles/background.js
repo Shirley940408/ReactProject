@@ -1,4 +1,4 @@
-import bgpic from '../imgs/background.jpg';
+import {brightOrange, lightGrey} from '../asset/color.js';
 
 const styles={
     container:{
@@ -21,10 +21,12 @@ const styles={
         },
         space_class:'row m-0 d-flex justify-content-center',
         footer:{
-            backgroundColor:"#E9E7EF",
-            height:'19.6%'            
+            backgroundColor:lightGrey,
+            height:'19.6%',
+                      
         },
-        footer_class:'row m-0'
+        footer_class:'row m-0 align-items-center',
+        footer_width:'col'
     },
     panel_row:{
         height:'58.5vh',width:'82.5vw'
@@ -34,9 +36,16 @@ const styles={
     panel_col_class:'col-lg-4 col-md-6 bg-white mx-auto p-0',
     text_title:{
         fontSize: 50,
-        color:'#ED5736',
-        margin: '1em '
+        color:brightOrange,
+        margin: '1em'
         
+    },
+    text_bottom_left:{
+        fontSize:23,        
+    },
+    text_bottom_right:{
+        fontSize:23,
+        color:brightOrange      
     }
 }
 
