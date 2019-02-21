@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './styles/background.js';
+import bgpic from './imgs/background.jpg';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+    return (  
+      <div style={styles.container} className={styles.container_class}>
+        <img src={bgpic} style={styles.image} className={styles.image_class}  alt=''/>
+        <div style={styles.panel.container} className={styles.panel.container_class}>
+          <div style={styles.panel_row} className={styles.panel_row_class}>
+            <div style={styles.panel_col} className={styles.panel_col_class}>
+              <div style={styles.panel.space} className={styles.panel.space_class}>
+                
+                <p style={styles.text_title}>BIG FISH</p>
+                TextInput
+              
+              
+              </div> 
+              <div style={styles.panel.footer} className={styles.panel.footer_class}></div> 
+            </div>
+          </div>    
+        </div>
       </div>
     );
   }
