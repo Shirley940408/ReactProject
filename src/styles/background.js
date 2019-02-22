@@ -38,6 +38,7 @@ const styles={
         fontSize: 50,
         color:brightOrange,
         marginTop: '1em',
+        fontFamily:'Russo One',
         marginBottom:0
         
     },
