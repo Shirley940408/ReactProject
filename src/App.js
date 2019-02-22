@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './styles/background.js';
 import bgpic from './imgs/background.jpg';
 import Text from './Text.js';
+import Button from'./Button.js';
 class App extends Component {
   render() {
     return (  
@@ -16,8 +17,8 @@ class App extends Component {
                 <Text placeholder="Email"/><br/>
                 <Text placeholder="Password"/><br/>
                 <Text placeholder="Name"/><br/>
-
-
+                
+                <Button label="SignUp"/>
               
               </div> 
               <div style={styles.panel.footer} className={styles.panel.footer_class}>

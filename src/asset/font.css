@@ -1,0 +1,12 @@
+@font-face{
+    font-family:'Roboto';
+    src:url('./Roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Russo';
+    src:url('./Russo_One/RussoOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

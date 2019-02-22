@@ -1,4 +1,4 @@
-import {brightOrange, lightGrey} from '../asset/color.js';
+import {brightOrange, lightGrey,darkGrey} from '../asset/color.js';
 
 const styles={
     container:{
@@ -37,11 +37,13 @@ const styles={
     text_title:{
         fontSize: 50,
         color:brightOrange,
-        margin: '1em'
+        marginTop: '1em',
+        marginBottom:0
         
     },
     text_bottom_left:{
-        fontSize:23,        
+        fontSize:23,  
+        color:darkGrey      
     },
     text_bottom_right:{
         fontSize:23,
