@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from './styles/background.js';
+import styles from './styles/background';
 import bgpic from './imgs/background.jpg';
-import Text from './Text.js';
-import Button from'./Button.js';
+import Button from'./Button';
+import TextInput from './TextInput';
 class App extends Component {
   render() {
     return (  
@@ -14,9 +14,9 @@ class App extends Component {
               <div style={styles.panel.space} className={styles.panel.space_class}>
                 
                 <p style={styles.text_title}>BIG FISH</p>
-                <Text placeholder="Email"/><br/>
-                <Text placeholder="Password"/><br/>
-                <Text placeholder="Name"/><br/>
+                <TextInput placeholder="Email"/>
+                <TextInput placeholder="Password"/>
+                <TextInput placeholder="Name"/>
                 
                 <Button label="SignUp"/>
               
