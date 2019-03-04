@@ -1,4 +1,4 @@
-import {brightOrange, lightGrey,darkGrey} from '../asset/color.js';
+import {brightOrange, lightGrey,darkGrey} from './color.js';
 
 const styles={
     container:{
@@ -35,12 +35,14 @@ const styles={
     panel_col:{height:"100%"},
     panel_col_class:'col-lg-4 col-md-6 bg-white mx-auto p-0',
     text_title:{
+        width:'100%',
         fontSize: 50,
         color:brightOrange,
         marginTop: '1em',
         fontFamily:'Russo One',
-        marginBottom:0
-        
+        marginBottom:0,
+        marginLeft:'auto',
+      
     },
     text_bottom_left:{
         fontSize:23,  

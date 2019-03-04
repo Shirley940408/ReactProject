@@ -1,4 +1,4 @@
-import {brightOrange} from'../asset/color';
+import {brightOrange} from'./color';
 
 const styles= {
     style:{

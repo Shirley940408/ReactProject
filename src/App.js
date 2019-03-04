@@ -3,7 +3,32 @@ import styles from './styles/background';
 import bgpic from './imgs/background.jpg';
 import Button from'./Button';
 import TextInput from './TextInput';
+import WhiteBlank from './asset/WhiteBlank';
 class App extends Component {
+  state={
+    errMsg:''
+  }
+
+  onSubmit=()=>{
+    console.log('submitted');
+    if(!this.input_value){
+      this.setState({
+        errMsg:'Required',
+      });
+    }
+  }
+  onChange=({target:{value}})=>{
+    this.input_value=value
+  }
+  onBlur=({target:{value}})=>{
+    console.log('on blur',value);
+    if(!value){
+        this.setState({
+            errMsg:'Required'
+        })
+    }
+}
+
   render() {
     return (  
       <div style={styles.container} className={styles.container_class}>
@@ -14,11 +39,13 @@ class App extends Component {
               <div style={styles.panel.space} className={styles.panel.space_class}>
                 
                 <p style={styles.text_title}>BIG FISH</p>
-                <TextInput placeholder="Email"/>
-                <TextInput placeholder="Password"/>
-                <TextInput placeholder="Name"/>
-                
-                <Button label="SignUp"/>
+                <TextInput onChange={this.onChange} onBlur={this.onBlur} errMsg={this.state.errMsg} placeholder="Email"/>
+                <WhiteBlank w={'100%'} h='m'/>
+                <TextInput onChange={this.onChange} onBlur={this.onBlur} errMsg={this.state.errMsg}  placeholder="Password"/>
+                <WhiteBlank w={'100%'} h='m'/>
+                <TextInput  onChange={this.onChange} onBlur={this.onBlur} errMsg={this.state.errMsg} placeholder="Name"/>
+                <WhiteBlank/>
+                <Button id="signup" onClick={this.onSubmit} label="SignUp"/>
               
               </div> 
               <div style={styles.panel.footer} className={styles.panel.footer_class}>
